@@ -1,6 +1,6 @@
 ## Animate Imageview Masks
 
-### A demonstration of using UIPanGestureRecognizer to animate the changing of masks of image views
+#### Demonstration of using UIPanGestureRecognizer to animate the changing of masks of image views
 
 --
 
