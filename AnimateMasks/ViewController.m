@@ -69,38 +69,46 @@
     }
 
     [self updateMasksWithOffset:CGPointZero];
-
-    [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)]];
 }
 
-#pragma mark - Gesture recognizers
+#pragma mark - Handle touches
 
-- (void)handlePan:(UIPanGestureRecognizer *)gesture
-{
-    CGPoint translate = [gesture translationInView:gesture.view];
-    CGPoint offset = CGPointMake(translate.x, 0.0); // only animate on x-axis
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    self.startPoint = [touch locationInView:self.view];
+}
 
-    if (gesture.state == UIGestureRecognizerStateChanged) {
-
-        // if we've simply moved, update masks accordingly
-
-        [self updateMasksWithOffset:offset];
-
-    } else if (gesture.state == UIGestureRecognizerStateEnded) {
-
-        // since mask paths are not animatable, you have to animate the final movement with display link
-
-        self.stopOffset = CGPointZero;
-        self.startOffset = offset;
-        self.animationDuration = 0.5 * fabs(translate.x / gesture.view.bounds.size.width); // set animation duration commensurate with how far it has to be animated (so the speed is same regardless of distance
-        [self startDisplayLink];
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    
+    NSArray<UITouch *> *predictedTouches;
+    
+    if ([event respondsToSelector:@selector(predictedTouchesForTouch:)]) {
+        predictedTouches = [event predictedTouchesForTouch:touch];
     }
+    
+    UITouch *lastTouch = [predictedTouches lastObject] ?: touch;
+    CGPoint location = [lastTouch locationInView:self.view];
+
+    CGPoint translation = CGPointMake(location.x - self.startPoint.x, 0);
+    
+    [self updateMasksWithOffset:translation];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    self.startOffset = CGPointMake(location.x - self.startPoint.x, 0);
+    self.stopOffset = CGPointZero;
+    
+    self.animationDuration = 0.5 * fabs(self.startOffset.x / self.view.bounds.size.width); // set animation duration commensurate with how far it has to be animated (so the speed is same regardless of distance
+
+    [self startDisplayLink];
 }
 
 #pragma mark - Image routines
 
-- (UIImage *)imageWithName:(NSString *)name
-{
+- (UIImage *)imageWithName:(NSString *)name {
     NSString *path = [[NSBundle mainBundle] pathForResource:[name stringByDeletingPathExtension] ofType:[name pathExtension]];
 
     UIImage *image = [UIImage imageWithContentsOfFile:path];
@@ -113,8 +121,7 @@
 
 #pragma mark - Masks and mask paths
 
-- (void)updateMasksWithOffset:(CGPoint)offset
-{
+- (void)updateMasksWithOffset:(CGPoint)offset {
     CGPoint start = CGPointMake(offset.x - self.view.bounds.size.width, 0.0);
     UIBezierPath *path;
     CAShapeLayer *mask;
@@ -130,8 +137,7 @@
 
 static CGFloat kSlantOffset = 50.0;
 
-- (UIBezierPath *)pathStartingAtPoint:(CGPoint)start
-{
+- (UIBezierPath *)pathStartingAtPoint:(CGPoint)start {
     UIBezierPath *path = [UIBezierPath bezierPath];
     CGPoint point = start;
 
@@ -155,28 +161,26 @@ static CGFloat kSlantOffset = 50.0;
 
 #pragma mark - Display Link
 
-- (void)startDisplayLink
-{
+- (void)startDisplayLink {
     self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(handleDisplayLink:)];
     self.startTime = CACurrentMediaTime();
     [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
-- (void)stopDisplayLink
-{
+- (void)stopDisplayLink {
     [self.displayLink invalidate];
     self.displayLink = nil;
 }
 
 // this display link handler is used for animating the changing of the paths for the masks
 
-- (void)handleDisplayLink:(CADisplayLink *)displayLink
-{
+- (void)handleDisplayLink:(CADisplayLink *)displayLink {
     CFTimeInterval elapsed = CACurrentMediaTime() - self.startTime;
+    CGFloat percent = elapsed / self.animationDuration;
 
-    if (elapsed < self.animationDuration) {
-        CGPoint offset = CGPointMake(self.startOffset.x + (self.stopOffset.x - self.startOffset.x) * elapsed / self.animationDuration,
-                                     self.startOffset.y + (self.stopOffset.y - self.startOffset.y) * elapsed / self.animationDuration);
+    if (percent < 1.0) {
+        CGPoint offset = CGPointMake(self.startOffset.x + (self.stopOffset.x - self.startOffset.x) * percent,
+                                     self.startOffset.y + (self.stopOffset.y - self.startOffset.y) * percent);
         [self updateMasksWithOffset:offset];
     } else {
         [self updateMasksWithOffset:self.stopOffset];

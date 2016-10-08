@@ -161,6 +161,11 @@
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Robert Ryan";
+				TargetAttributes = {
+					834F700F19A2320A00632064 = {
+						DevelopmentTeam = UZAPXQTVQ4;
+					};
+				};
 			};
 			buildConfigurationList = 834F700B19A2320A00632064 /* Build configuration list for PBXProject "AnimateMasks" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -317,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnimateMasks/AnimateMasks-Prefix.pch";
 				INFOPLIST_FILE = "AnimateMasks/AnimateMasks-Info.plist";
@@ -330,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnimateMasks/AnimateMasks-Prefix.pch";
 				INFOPLIST_FILE = "AnimateMasks/AnimateMasks-Info.plist";
