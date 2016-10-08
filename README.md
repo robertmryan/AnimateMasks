@@ -8,7 +8,7 @@ This is an demonstration of the code discussed on Stack Overflow: http://stackov
 
 This is for illustrative purposes only.
 
-Developed in Xcode 5.1.1 for iOS 7.0+.
+Updated in Xcode 8 for iOS 8.0+.
 
 ## License
 

@@ -19,6 +19,10 @@
 @property (nonatomic, strong) NSMutableArray *imageViews;
 @property (nonatomic, strong) NSMutableArray *imageViewMasks;
 
+// keep track of gesture
+
+@property (nonatomic) CGPoint startPoint;
+
 // some variables for the display link which will animate when you end the gesture
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
@@ -31,8 +35,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     // these are a few random images I found by searching for "landscape" at images.google.com
