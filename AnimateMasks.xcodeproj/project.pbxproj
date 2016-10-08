@@ -16,27 +16,13 @@
 		834F702719A2320B00632064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F702519A2320B00632064 /* Main.storyboard */; };
 		834F702A19A2320B00632064 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F702919A2320B00632064 /* ViewController.m */; };
 		834F702C19A2320B00632064 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834F702B19A2320B00632064 /* Images.xcassets */; };
-		834F703319A2320C00632064 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834F703219A2320C00632064 /* XCTest.framework */; };
-		834F703419A2320C00632064 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834F701319A2320A00632064 /* Foundation.framework */; };
-		834F703519A2320C00632064 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834F701719A2320B00632064 /* UIKit.framework */; };
-		834F703D19A2320C00632064 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 834F703B19A2320C00632064 /* InfoPlist.strings */; };
-		834F703F19A2320C00632064 /* AnimateMasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F703E19A2320C00632064 /* AnimateMasksTests.m */; };
 		8369F7A419A234B200576077 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8369F7A019A234B200576077 /* image1.png */; };
 		8369F7A519A234B200576077 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8369F7A119A234B200576077 /* image2.jpg */; };
 		8369F7A619A234B200576077 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8369F7A219A234B200576077 /* image3.jpg */; };
 		8369F7A719A234B200576077 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8369F7A319A234B200576077 /* image4.jpg */; };
 		8369F7AB19A2418700576077 /* UIImage+SimpleResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8369F7AA19A2418700576077 /* UIImage+SimpleResize.m */; };
+		8374C68A1DA93BAB001549C5 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8374C6891DA93BAB001549C5 /* Launch.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		834F703619A2320C00632064 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 834F700819A2320A00632064 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 834F700F19A2320A00632064;
-			remoteInfo = AnimateMasks;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		834F701019A2320A00632064 /* AnimateMasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimateMasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,11 +39,7 @@
 		834F702819A2320B00632064 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		834F702919A2320B00632064 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		834F702B19A2320B00632064 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		834F703119A2320C00632064 /* AnimateMasksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimateMasksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834F703219A2320C00632064 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		834F703A19A2320C00632064 /* AnimateMasksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimateMasksTests-Info.plist"; sourceTree = "<group>"; };
-		834F703C19A2320C00632064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		834F703E19A2320C00632064 /* AnimateMasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateMasksTests.m; sourceTree = "<group>"; };
 		8369F7A019A234B200576077 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		8369F7A119A234B200576077 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		8369F7A219A234B200576077 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
@@ -65,6 +47,7 @@
 		8369F7A919A2418700576077 /* UIImage+SimpleResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SimpleResize.h"; sourceTree = "<group>"; };
 		8369F7AA19A2418700576077 /* UIImage+SimpleResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SimpleResize.m"; sourceTree = "<group>"; };
 		8369F7AC19A2504700576077 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8374C6891DA93BAB001549C5 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,16 +61,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		834F702E19A2320C00632064 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834F703319A2320C00632064 /* XCTest.framework in Frameworks */,
-				834F703519A2320C00632064 /* UIKit.framework in Frameworks */,
-				834F703419A2320C00632064 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,7 +69,6 @@
 			children = (
 				8369F7AC19A2504700576077 /* README.md */,
 				834F701919A2320B00632064 /* AnimateMasks */,
-				834F703819A2320C00632064 /* AnimateMasksTests */,
 				834F701219A2320A00632064 /* Frameworks */,
 				834F701119A2320A00632064 /* Products */,
 			);
@@ -106,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				834F701019A2320A00632064 /* AnimateMasks.app */,
-				834F703119A2320C00632064 /* AnimateMasksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +99,7 @@
 				834F702219A2320B00632064 /* AppDelegate.h */,
 				834F702319A2320B00632064 /* AppDelegate.m */,
 				834F702519A2320B00632064 /* Main.storyboard */,
+				8374C6891DA93BAB001549C5 /* Launch.storyboard */,
 				834F702819A2320B00632064 /* ViewController.h */,
 				834F702919A2320B00632064 /* ViewController.m */,
 				8369F7A019A234B200576077 /* image1.png */,
@@ -148,24 +120,6 @@
 				834F701C19A2320B00632064 /* InfoPlist.strings */,
 				834F701F19A2320B00632064 /* main.m */,
 				834F702119A2320B00632064 /* AnimateMasks-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		834F703819A2320C00632064 /* AnimateMasksTests */ = {
-			isa = PBXGroup;
-			children = (
-				834F703E19A2320C00632064 /* AnimateMasksTests.m */,
-				834F703919A2320C00632064 /* Supporting Files */,
-			);
-			path = AnimateMasksTests;
-			sourceTree = "<group>";
-		};
-		834F703919A2320C00632064 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				834F703A19A2320C00632064 /* AnimateMasksTests-Info.plist */,
-				834F703B19A2320C00632064 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,37 +153,14 @@
 			productReference = 834F701019A2320A00632064 /* AnimateMasks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		834F703019A2320C00632064 /* AnimateMasksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 834F704519A2320C00632064 /* Build configuration list for PBXNativeTarget "AnimateMasksTests" */;
-			buildPhases = (
-				834F702D19A2320C00632064 /* Sources */,
-				834F702E19A2320C00632064 /* Frameworks */,
-				834F702F19A2320C00632064 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				834F703719A2320C00632064 /* PBXTargetDependency */,
-			);
-			name = AnimateMasksTests;
-			productName = AnimateMasksTests;
-			productReference = 834F703119A2320C00632064 /* AnimateMasksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		834F700819A2320A00632064 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Robert Ryan";
-				TargetAttributes = {
-					834F703019A2320C00632064 = {
-						TestTargetID = 834F700F19A2320A00632064;
-					};
-				};
 			};
 			buildConfigurationList = 834F700B19A2320A00632064 /* Build configuration list for PBXProject "AnimateMasks" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -245,7 +176,6 @@
 			projectRoot = "";
 			targets = (
 				834F700F19A2320A00632064 /* AnimateMasks */,
-				834F703019A2320C00632064 /* AnimateMasksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,18 +188,11 @@
 				834F702C19A2320B00632064 /* Images.xcassets in Resources */,
 				8369F7A419A234B200576077 /* image1.png in Resources */,
 				8369F7A519A234B200576077 /* image2.jpg in Resources */,
+				8374C68A1DA93BAB001549C5 /* Launch.storyboard in Resources */,
 				8369F7A619A234B200576077 /* image3.jpg in Resources */,
 				8369F7A719A234B200576077 /* image4.jpg in Resources */,
 				834F701E19A2320B00632064 /* InfoPlist.strings in Resources */,
 				834F702719A2320B00632064 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834F702F19A2320C00632064 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834F703D19A2320C00632064 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,23 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		834F702D19A2320C00632064 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834F703F19A2320C00632064 /* AnimateMasksTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		834F703719A2320C00632064 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 834F700F19A2320A00632064 /* AnimateMasks */;
-			targetProxy = 834F703619A2320C00632064 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		834F701C19A2320B00632064 /* InfoPlist.strings */ = {
@@ -322,14 +229,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		834F703B19A2320C00632064 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				834F703C19A2320C00632064 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -346,13 +245,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -365,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -384,20 +289,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,10 +317,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnimateMasks/AnimateMasks-Prefix.pch";
 				INFOPLIST_FILE = "AnimateMasks/AnimateMasks-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertmryan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,52 +330,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnimateMasks/AnimateMasks-Prefix.pch";
 				INFOPLIST_FILE = "AnimateMasks/AnimateMasks-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robertmryan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		834F704619A2320C00632064 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimateMasks.app/AnimateMasks";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AnimateMasks/AnimateMasks-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AnimateMasksTests/AnimateMasksTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		834F704719A2320C00632064 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimateMasks.app/AnimateMasks";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AnimateMasks/AnimateMasks-Prefix.pch";
-				INFOPLIST_FILE = "AnimateMasksTests/AnimateMasksTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -486,15 +356,6 @@
 			buildConfigurations = (
 				834F704319A2320C00632064 /* Debug */,
 				834F704419A2320C00632064 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		834F704519A2320C00632064 /* Build configuration list for PBXNativeTarget "AnimateMasksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				834F704619A2320C00632064 /* Debug */,
-				834F704719A2320C00632064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
